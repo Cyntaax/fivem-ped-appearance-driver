@@ -103,7 +103,7 @@ function Ped:GetAppearance()
     Model = GetEntityModel(self.Handle)
 
     local shapeFirst, shapeSecond, _, skinFirst, skinSecond, _,
-    shapeMix, skinMix, _= table.unpack({GetHeadBlendData()})
+    shapeMix, skinMix, _= table.unpack({GetPedHeadBlendData()})
     ---@type PedInheritanceData
     local finalBlend = {}
     finalBlend.Father = shapeFirst
